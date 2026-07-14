@@ -10,7 +10,7 @@ export default function HowItWorks() {
           <h2 data-reveal>
             Straightforward steps to give your pet the <span>best care</span>
           </h2>
-          <img data-reveal src={`${A}6OP0cfLbFDebaOcYg0wyASwZY.avif`} alt="goofy puppy peeking through a paper hole" />
+          <img data-reveal src={`${A}6OP0cfLbFDebaOcYg0wyASwZY.avif`} alt="goofy puppy peeking through a paper hole" loading="lazy" />
         </div>
         <div className="step-list">
           {steps.map((step, index) => (

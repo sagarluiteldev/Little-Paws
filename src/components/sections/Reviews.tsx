@@ -28,13 +28,15 @@ export default function Reviews() {
         <h2 data-reveal>Heartwarming words from happy pet owners</h2>
       </div>
       <div className="review-card" data-reveal>
-        <p>{current.quote}</p>
-        <div className="review-person">
-          <img src={`${A}${current.avatar}`} alt="" />
-          <span>
-            <strong>{current.name}</strong>
-            <em>{current.detail}</em>
-          </span>
+        <div key={index} className="review-card-animate">
+          <p>{current.quote}</p>
+          <div className="review-person">
+            <img src={`${A}${current.avatar}`} alt={`Photo of ${current.name}`} loading="lazy" />
+            <span>
+              <strong>{current.name}</strong>
+              <em>{current.detail}</em>
+            </span>
+          </div>
         </div>
         <button type="button" onClick={() => setIndex((index + 1) % reviews.length)} aria-label="Next review">
           <ChevronRight />

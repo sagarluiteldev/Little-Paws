@@ -126,9 +126,9 @@ export const faqs: Question[] = [
 ];
 
 export const gallery = [
-  "GU81p9JS7M3FMdMpEsjCig6zWMA.avif",
-  "byJ2TaGAeh1Uu7C1KOrW8Mt3YA.avif",
-  "rS2n6W6YIOjOr1b6p9vjOhIgY.avif",
-  "bhe1ahOyfno7QTwsUPUmwzHAxtY.avif",
-  "v9TDXJWDeXZJz8gIuzlQQtpNE8.avif",
+  { src: "GU81p9JS7M3FMdMpEsjCig6zWMA.avif", alt: "Happy fluffy golden retriever puppy running on grass" },
+  { src: "byJ2TaGAeh1Uu7C1KOrW8Mt3YA.avif", alt: "Close-up portrait of a cute pug puppy tilting its head" },
+  { src: "rS2n6W6YIOjOr1b6p9vjOhIgY.avif", alt: "Groomed white poodle puppy sitting upright on a table" },
+  { src: "bhe1ahOyfno7QTwsUPUmwzHAxtY.avif", alt: "Small brown terrier dog playing with a tennis ball" },
+  { src: "v9TDXJWDeXZJz8gIuzlQQtpNE8.avif", alt: "Cute tiny chihuahua wearing a colorful knitted sweater" },
 ];

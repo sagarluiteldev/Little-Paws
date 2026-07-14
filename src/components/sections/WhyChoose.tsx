@@ -19,7 +19,7 @@ export default function WhyChoose() {
           <PawButton href="#contact">Schedule a visit</PawButton>
         </div>
         <div className="rounded-photo blue-photo" data-reveal>
-          <img src={`${A}4Yb5t7I9TwOK30Fgn80wjPtAmQ.avif`} alt="scruffy puppy on a lemon hat" />
+          <img src={`${A}4Yb5t7I9TwOK30Fgn80wjPtAmQ.avif`} alt="scruffy puppy on a lemon hat" loading="lazy" />
         </div>
       </div>
     </section>

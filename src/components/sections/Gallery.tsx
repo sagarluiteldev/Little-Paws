@@ -9,8 +9,13 @@ export default function Gallery() {
         <h2 data-reveal>Happy moments with the pets that brighten our days</h2>
       </div>
       <div className="marquee" data-reveal>
-        {[...gallery, ...gallery].map((image, index) => (
-          <img src={`${A}${image}`} alt="happy puppy portrait" key={`${image}-${index}`} />
+        {[...gallery, ...gallery].map((item, index) => (
+          <img
+            src={`${A}${item.src}`}
+            alt={item.alt}
+            loading="lazy"
+            key={`${item.src}-${index}`}
+          />
         ))}
       </div>
     </section>

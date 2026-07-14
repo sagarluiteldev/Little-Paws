@@ -11,9 +11,9 @@ export default function AboutUs() {
       </div>
       <div className="collage-wrap" data-reveal>
         <div className="yellow-shelf" />
-        <img className="collage-img left" src={`${A}OsueP7KJmSKkVV7OAeeUDKT3Feo.avif`} alt="lady smilling with a chihuahua" />
-        <img className="collage-img center" src={`${A}OHqEcD2usoRAhLXbVxuDv9nN4.avif`} alt="portrait shot of a puppy and its owner" />
-        <img className="collage-img right" src={`${A}YAZnBkBG3wKGjlW980PFrfWoaZ0.avif`} alt="puppy with its mum on a mountain hike" />
+        <img className="collage-img left" src={`${A}OsueP7KJmSKkVV7OAeeUDKT3Feo.avif`} alt="lady smilling with a chihuahua" loading="lazy" />
+        <img className="collage-img center" src={`${A}OHqEcD2usoRAhLXbVxuDv9nN4.avif`} alt="portrait shot of a puppy and its owner" loading="lazy" />
+        <img className="collage-img right" src={`${A}YAZnBkBG3wKGjlW980PFrfWoaZ0.avif`} alt="puppy with its mum on a mountain hike" loading="lazy" />
       </div>
     </section>
   );

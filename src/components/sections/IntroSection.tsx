@@ -28,8 +28,8 @@ export default function IntroSection() {
             <span className="mini-cloud c" />
           </div>
           <div className="dog-wrapper">
-            <img className="intro-dog" src={`${A}sX7EGztFkBg1CpPwavAlKndnlIQ.avif`} alt="happy dog sticking its toungue out" />
-            <img className="shades" src={`${A}tD3FyS3DOOswV2OVzWNjsbhs.avif`} alt="cute paw shades" />
+            <img className="intro-dog" src={`${A}sX7EGztFkBg1CpPwavAlKndnlIQ.avif`} alt="happy dog sticking its toungue out" loading="lazy" />
+            <img className="shades" src={`${A}tD3FyS3DOOswV2OVzWNjsbhs.avif`} alt="cute paw shades" loading="lazy" />
           </div>
         </div>
         <div className="copy-block">

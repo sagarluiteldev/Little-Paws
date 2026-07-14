@@ -22,7 +22,7 @@ export default function ServicesSection() {
           <h3>Book Your Appointment</h3>
           <p>Schedule a session with our experienced vets and groomers to give your pet the care they deserve. Quick booking and thoughtful service.</p>
           <PawButton href="#contact">Schedule a visit</PawButton>
-          <img src={`${A}C0TmIz4gdVQNswbCy8C1si7JzK4.avif`} alt="happy golden retriever dog" />
+          <img src={`${A}C0TmIz4gdVQNswbCy8C1si7JzK4.avif`} alt="happy golden retriever dog" loading="lazy" />
         </article>
       </div>
     </section>

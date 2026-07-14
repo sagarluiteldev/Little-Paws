@@ -7,7 +7,11 @@ export default function Hero() {
     () =>
       "Your Pet's Safe and Joyful Haven"
         .split(" ")
-        .map((word) => <span className="word" key={word}>{word}</span>),
+        .map((word, index) => (
+          <span className="word" key={`${word}-${index}`}>
+            {word}
+          </span>
+        )),
     [],
   );
 

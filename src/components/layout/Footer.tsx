@@ -10,13 +10,13 @@ export default function Footer() {
           <img src={`${A}logo_little_paws.png`} alt="Brand Logo" />
           <p>Trusted pet care for a healthier, happier life.</p>
           <div className="socials">
-            <a href="https://facebook.com" aria-label="Facebook">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <Facebook />
             </a>
-            <a href="https://x.com/Plaiterhq" aria-label="X">
+            <a href="https://x.com/Plaiterhq" target="_blank" rel="noopener noreferrer" aria-label="X">
               <X />
             </a>
-            <a href="https://instagram.com" aria-label="Instagram">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <Instagram />
             </a>
           </div>
@@ -28,7 +28,7 @@ export default function Footer() {
           <a href="#services">Services</a>
           <a href="#how-it-works">How it works</a>
           <a href="#reviews">Reviews</a>
-          <a href="/404">Error 404</a>
+          <a href="#hero">Back to top</a>
         </div>
         <div className="footer-contact">
           <p>Contact us</p>

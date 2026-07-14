@@ -17,9 +17,14 @@ export function usePageAnimations() {
     const updateLenis = (time: number) => lenis.raf(time * 1000);
     lenis.on("scroll", ScrollTrigger.update);
     gsap.ticker.add(updateLenis);
-    gsap.ticker.lagSmoothing(0);
+    const mm = gsap.matchMedia();
 
-    const ctx = gsap.context(() => {
+    mm.add({
+      isMobile: "(max-width: 809px)",
+      isDesktop: "(min-width: 810px)"
+    }, (context) => {
+      const { isMobile } = context.conditions as { isMobile: boolean };
+
       /* ═══════════════════════════════════
          HERO — entrance animations
          ═══════════════════════════════════ */
@@ -288,8 +293,6 @@ export function usePageAnimations() {
         scrollTrigger: { trigger: ".about-collage", start: "top 80%" },
       });
 
-      const isMobile = window.matchMedia("(max-width: 809px)").matches;
-
       if (isMobile) {
         gsap.from(".collage-img.left", {
           x: 60,
@@ -500,7 +503,7 @@ export function usePageAnimations() {
     });
 
     return () => {
-      ctx.revert();
+      mm.revert();
       lenis.destroy();
       gsap.ticker.remove(updateLenis);
     };
