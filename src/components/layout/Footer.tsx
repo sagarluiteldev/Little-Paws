@@ -4,10 +4,10 @@ import { A } from "../../constants";
 export default function Footer() {
   return (
     <footer className="footer">
-      <img className="footer-bg" src={`${A}YaDj5qGDKZG2c6V9SyodRKc4.png`} alt="brand background image" />
+      <img className="footer-bg" src={`${A}YaDj5qGDKZG2c6V9SyodRKc4.webp`} alt="brand background image" />
       <div className="footer-inner">
         <div className="footer-brand">
-          <img src={`${A}logo_little_paws.png`} alt="Brand Logo" />
+          <img src={`${A}logo_little_paws.webp`} alt="Brand Logo" />
           <p>Trusted pet care for a healthier, happier life.</p>
           <div className="socials">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">

@@ -47,7 +47,7 @@ export default function Contact() {
         <div className="contact-copy" data-reveal>
           <h2>Get in touch with our pet care experts</h2>
           <div className="contact-image">
-            <img src={`${A}DhxpPNyvDS30ZM9WEMahhQ1PY.avif`} alt="mum and puppy cute selfie" loading="lazy" />
+            <img src={`${A}DhxpPNyvDS30ZM9WEMahhQ1PY.webp`} alt="mum and puppy cute selfie" loading="lazy" />
             <div>
               <span>Your pet's comfort, health, and happiness.</span>
               <PawPrint />

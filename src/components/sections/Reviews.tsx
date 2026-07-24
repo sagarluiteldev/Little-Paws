@@ -8,13 +8,13 @@ export default function Reviews() {
       quote: "The staff is very kind, and my pet always comes back happy and well-groomed. I wouldn't trust anyone else with my pet",
       name: "Sophie Anderson",
       detail: "Max's Mom",
-      avatar: "lX4cC7pSYwz3u2himuZXTpdU.avif",
+      avatar: "lX4cC7pSYwz3u2himuZXTpdU.webp",
     },
     {
       quote: "Every visit feels calm, warm, and professional. My puppy leaves relaxed, clean, and excited to come back again.",
       name: "Daniel Lee",
       detail: "Coco's Dad",
-      avatar: "df97Hq3vu3cjP4GgD4gBxQMUII.avif",
+      avatar: "df97Hq3vu3cjP4GgD4gBxQMUII.webp",
     },
   ];
   const [index, setIndex] = useState(0);

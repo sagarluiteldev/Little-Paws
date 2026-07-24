@@ -280,9 +280,9 @@ button {
   z-index: 2;
   left: 50%;
   bottom: 25px;
-  width: min(770px, 54vw);
+  width: min(840px, 59vw);
   max-width: none;
-  transform: translateX(-10%);
+  transform: translateX(-18%);
   transform-origin: 50% 100%;
   will-change: transform;
 }
@@ -404,6 +404,10 @@ button {
   height: 26px;
   border-radius: 99px;
   background: rgba(255, 255, 255, 0.34);
+}
+
+.hero-mini-cloud {
+  display: none;
 }
 
 .mini-cloud::before,
@@ -649,7 +653,7 @@ button {
   padding: 86px 26px 36px;
   border-radius: 34px;
   background-color: #f1f3ff;
-  background-image: url("/assets/irH7Dag30YqNcSK7sjeAhwh3P8.avif");
+  background-image: url("/assets/irH7Dag30YqNcSK7sjeAhwh3P8.webp");
   background-size: 100% 100%;
   color: #55555d;
   transition: filter 0.3s ease, box-shadow 0.3s ease;
@@ -756,7 +760,7 @@ button {
   z-index: 2;
   margin-top: 0;
   background-color: var(--pink);
-  background-image: url("/assets/WO8UMteyvaLuC0g01tKRUpPOU.avif");
+  background-image: url("/assets/WO8UMteyvaLuC0g01tKRUpPOU.webp");
   background-size: cover;
   background-position: top center;
 }
@@ -1585,8 +1589,9 @@ button {
   .hero-dog {
     left: 50%;
     bottom: 0;
-    width: min(726px, 86vw);
+    width: min(790px, 92vw);
     transform: translateX(-50%);
+    transform-origin: 50% 100%;
   }
 
   .cloud-one {
@@ -1773,40 +1778,115 @@ button {
   .hero {
     height: 100vh;
     height: 100dvh;
-    min-height: auto;
+    min-height: 560px;
   }
 
   .hero-content {
-    padding-top: 120px;
+    padding-top: clamp(95px, 14vh, 135px);
   }
 
   .hero-title {
-    font-size: 42px;
+    font-size: clamp(34px, 8.8vw, 42px);
+    line-height: 1.12;
   }
 
   .hero-copy {
-    font-size: 17px;
+    font-size: clamp(15px, 3.8vw, 17px);
+    margin: clamp(10px, 2vh, 16px) auto clamp(16px, 2.5vh, 22px);
   }
 
   .hero-dog {
-    width: 100vw;
-    bottom: 0;
+    width: min(122vw, 74vh);
+    max-width: 580px;
+    bottom: clamp(15px, 4.2vh, 45px);
     left: 50%;
     transform: translateX(-50%);
+    transform-origin: 50% 100%;
   }
 
   .cloud-one {
-    top: 15%;
-    right: 3%;
-    transform: scale(0.7);
+    top: 14%;
+    right: 4%;
+    transform: scale(0.65);
   }
 
   .cloud-two {
-    right: 1%;
-    top: 35%;
-    width: 120px;
-    height: 60px;
-    transform: scale(0.65);
+    right: 2%;
+    top: 28%;
+    width: 130px;
+    height: 65px;
+    transform: scale(0.7);
+  }
+
+  .hero-mini-cloud {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.85);
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.04));
+    pointer-events: none;
+  }
+
+  .cloud-m1 {
+    top: 16%;
+    left: 6%;
+    transform: scale(0.85);
+  }
+
+  .cloud-m2 {
+    top: 36%;
+    left: 6%;
+    transform: scale(0.9);
+  }
+
+  .cloud-m3 {
+    top: 44%;
+    right: 6%;
+    transform: scale(0.75);
+  }
+
+  .cloud-m4 {
+    top: 24%;
+    right: 12%;
+    transform: scale(0.7);
+  }
+
+  .cloud-m5 {
+    top: 40%;
+    left: 30%;
+    transform: scale(0.8);
+  }
+
+  /* Shorter phone screens */
+  @media (max-height: 720px) {
+    .hero-content {
+      padding-top: 88px;
+    }
+    .hero-title {
+      font-size: 33px;
+    }
+    .hero-copy {
+      font-size: 15px;
+      margin: 8px auto 14px;
+    }
+    .hero-dog {
+      width: min(112vw, 68vh);
+      bottom: 8px;
+    }
+  }
+
+  /* Taller phone screens */
+  @media (min-height: 840px) {
+    .hero-content {
+      padding-top: 145px;
+    }
+    .hero-title {
+      font-size: 44px;
+    }
+    .hero-dog {
+      width: min(125vw, 75vh);
+      bottom: 48px;
+    }
   }
 
   .intro-art {

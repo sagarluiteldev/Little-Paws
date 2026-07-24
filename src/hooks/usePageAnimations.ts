@@ -172,21 +172,24 @@ export function usePageAnimations() {
         scrollTrigger: { trigger: ".stats-band", start: "top 75%" },
       });
 
-      gsap.from(".stat-number", {
-        textContent: 0,
-        duration: 1.8,
-        snap: { textContent: 1 },
-        stagger: 0.16,
-        ease: "power1.out",
-        scrollTrigger: {
-          trigger: ".stats-band",
-          start: "top 72%",
-        },
-        onUpdate: function () {
-          const target = this.targets()[0] as HTMLElement;
-          const suffix = target.dataset.suffix ?? "+";
-          target.textContent = `${Number(target.textContent).toLocaleString()}${suffix}`;
-        },
+      document.querySelectorAll(".stat-number").forEach((el) => {
+        const targetEl = el as HTMLElement;
+        const targetVal = parseFloat(targetEl.dataset.target || targetEl.textContent?.replace(/[^\d.]/g, "") || "0");
+        const suffix = targetEl.dataset.suffix ?? "+";
+        const obj = { val: 0 };
+
+        gsap.to(obj, {
+          val: targetVal,
+          duration: 1.8,
+          ease: "power1.out",
+          scrollTrigger: {
+            trigger: ".stats-band",
+            start: "top 72%",
+          },
+          onUpdate: () => {
+            targetEl.textContent = `${Math.floor(obj.val).toLocaleString()}${suffix}`;
+          },
+        });
       });
 
       /* ═══════════════════════════════════

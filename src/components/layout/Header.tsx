@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <header className="site-header" ref={headerRef}>
       <a className="logo-link" href="#hero" aria-label="Little Paws home">
-        <img src={`${A}logo_little_paws.png`} alt="Little Paws" />
+        <img src={`${A}logo_little_paws.webp`} alt="Little Paws" />
       </a>
       <nav className="desktop-nav" aria-label="Primary navigation">
         {nav.map(([label, href]) => (
